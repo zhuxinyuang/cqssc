@@ -1,7 +1,7 @@
 {
-    "name": "zhuzhichao/ip-location-zh",
-    "description": "get the ip's location info with Chinese",
-	"keywords": ["ip", "location", "chinese"],
+    "name": "zhuxinyuang/cqssc",
+    "description": "Lottery class",
+	"keywords": ["Lottery", "Lottery", "Lottery"],
     "license": "MIT",
     "authors": [
         {
@@ -11,19 +11,12 @@
     ],
 	"autoload": {
 		"psr-4": {
-			"Zhuzhichao\\IpLocationZh\\": "src/"
+			"zhuxinyuang\\cqssc\\": "src/"
 		}
 	},
-    "extra": {
-      "laravel": {
-        "aliases": {
-          "Ip": "Zhuzhichao\\IpLocationZh\\Ip"
-        }
-      }
+    
+    "require": {
+        "php": ">=7.0.0"
     },
-    "minimum-stability": "stable",
-    "require": {},
-    "require-dev": {
-      "phpunit/phpunit": "^4.0"
-    }
+    
   }
