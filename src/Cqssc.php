@@ -1,29 +1,30 @@
-<?php 
-
+<?php
+declare(strict_types=1);
 namespace Zhuxinyuang\Cqssc;
 
 
 class Cqssc
 {
     /**期数小于10自动补0 小于100自动补00
-     * @param $num
+     * @param int $num
      * @return string
      */
-   public function BuLings ( $num ) {
+    public  function BuLings (int $num ):string {
         if ( $num<10 ) {
             $num = '00'.$num;
         }
         if ( $num>=10 && $num<100 ) {
-            $num = '0'.$num;
+            $num = '0'.(string)$num;
         }
         return $num;
     }
+
     /**
      * @param $num
      * @param $type
      * @return string
      */
-    public function auto($num, $type)
+    public function auto(array $num, int $type):string
     {
         $zh = $num[0] + $num[1] + $num[2] + $num[3] + $num[4];
         if ($type == 1) {
@@ -176,8 +177,7 @@ class Cqssc
      * @param $arnum
      * @return string
      */
-    public function sh($arnum)
-    {
+    public function sh(array $arnum) :string{
         /*
         $cz=0		五条
     $cz=1		四条
@@ -262,8 +262,7 @@ class Cqssc
      * @param $s
      * @return string
      */
-    public function dndx($s)
-    {
+    public function dndx(string $s):string{
         //echo "[".$s."]";exit;
         if ($s == '没牛') {
             return "没牛";
@@ -278,8 +277,7 @@ class Cqssc
      * @param $s
      * @return string
      */
-    public function dnds($s)
-    {
+    public function dnds(string $s):string{
         if ($s == '没牛') {
             return "没牛";
         } elseif ($s == '牛牛' || $s == '牛2' || $s == '牛4' || $s == '牛6' || $s == '牛8') {
@@ -293,8 +291,7 @@ class Cqssc
      * @param $ball
      * @return string
      */
-    public function Ds($ball)
-    {
+    public function Ds(int $ball):string{
         if ($ball % 2 == 0) {
             return '双';
         } else {
@@ -306,8 +303,7 @@ class Cqssc
      * @param $ball
      * @return string
      */
-    public function Dx($ball)
-    {
+    public function Dx(int $ball):string{
         if ($ball > 4) {
             return '大';
         } else {
@@ -323,8 +319,7 @@ class Cqssc
      * @param $n5
      * @return string
      */
-    public function DouNu($n1, $n2, $n3, $n4, $n5)
-    {
+    public function DouNu(int $n1,int $n2,int $n3,int $n4,int $n5):string{
         if (intval(($n1 + $n2 + $n3) % 10) == 0) {
             if (intval($n4 + $n5) == 0 || intval($n4 + $n5) == 10) {
                 return "牛牛";
