@@ -1,22 +1,21 @@
 {
-    "name": "zhuxinyuang/cqssc",
+    "name": "zhuxinyuag/cqssc",
     "description": "Lottery class",
-	"keywords": ["Lottery", "Lottery", "Lottery"],
+    "type": "project",
     "license": "MIT",
     "authors": [
         {
-            "name": "zhuzhichao",
-            "email": "me@zhuzhichao.com"
+            "name": "Zhu",
+            "email": "147317963@qq.com"
         }
     ],
 	"autoload": {
 		"psr-4": {
-			"zhuxinyuang\\Cqssc\\": "src/"
+			"Zhuxinyuang\\Cqssc\\": "src/"
 		}
 	},
-    
-    "require": {
-        "php": ">=7.0.0"
-    }
-    
-  }
+    "minimum-stability": "dev",
+    "require" : {
+		"php" : ">=7.3.0"
+	}
+}
