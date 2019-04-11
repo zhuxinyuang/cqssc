@@ -1,5 +1,5 @@
 {
-    "name": "zhuxinyuag/cqssc",
+    "name": "zhuxinyuang/cqssc",
     "description": "Lottery class",
     "license": "MIT",
     "authors": [
@@ -15,6 +15,6 @@
 	},
     "minimum-stability": "stable",
     "require" : {
-		"php" : ">=7.3.0"
+		"php" : ">=7.0.0"
 	}
 }
