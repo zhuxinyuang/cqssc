@@ -1,8 +1,10 @@
-<?php namespace Zhuzhichao\IpLocationZh;
+<?php 
 
-use Exception;
+namespace Zhuxinyuang\Cqssc;;
 
-class Ip
+
+
+class Cqssc
 {
     const IPV4 = 1;
     const IPV6 = 2;
