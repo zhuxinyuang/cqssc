@@ -11,12 +11,12 @@
     ],
 	"autoload": {
 		"psr-4": {
-			"zhuxinyuang\\cqssc\\": "src/"
+			"zhuxinyuang\\Cqssc\\": "src/"
 		}
 	},
     
     "require": {
         "php": ">=7.0.0"
-    },
+    }
     
   }
